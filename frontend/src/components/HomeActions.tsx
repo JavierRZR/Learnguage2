@@ -1,31 +1,35 @@
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { ChangeEvent, useEffect, useState } from "react";
 import InputField from "../ui/InputField";
 import Button from "../ui/Button";
 import { RandomIcon } from "../assets/svg";
+import useUserContext from "../contexts/UserContext";
+import fetchRandomName from "../utils/fetchRandomName.ts";
+
 const HomeActions = () => {
   const { t } = useTranslation();
-  const [userData, setUserData] = useState({ id: 0, name: "" });
+  const { userId, name, changeName } = useUserContext();
+  const [userData, setUserData] = useState({ id: userId, name: name });
+  const [inputValue, setInputValue] = useState(name);
 
   const fetchData = async () => {
-    try {
-      const response = await axios.get(`https://randomuser.me/api/`);
-      const data = response.data.results[0];
-      setUserData({
-        id: data.login.uuid,
-        name: `${data.name.title} ${data.name.first} ${data.name.last}`,
-      });
-      //   console.log(response);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    const name = await fetchRandomName();
+    setUserData({
+      id: userId,
+      name: name,
+    });
+    setInputValue(name);
   };
 
   useEffect(() => {
-    //todo Descomentar para volver a llamar en inicio.
-    // fetchData();
-  }, []);
+    changeName(userData.name);
+    setInputValue(userData.name); // Actualiza el valor del input cuando cambia userData
+  }, [userData, changeName]);
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+    changeName(e.target.value);
+  };
 
   return (
     <>
@@ -38,7 +42,8 @@ const HomeActions = () => {
             <div className="flex flex-row">
               <input
                 type="text"
-                placeholder={userData.name}
+                value={inputValue}
+                onChange={handleInputChange}
                 className="h-10 ps-2  rounded-md rounded-e-none border-2 font-semibold text-lg border-neutral-400 bg-neutral-100 focus:border-neutral-400  dark:border-neutral-700 dark:bg-neutral-900"
               />
               <Button

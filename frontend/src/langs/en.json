@@ -14,7 +14,8 @@
     "pagination": {
       "previous": "Previous",
       "next": "Next",
-      "message": "Page {{from}} of {{to}} Total rooms: {{total}}."
+      "pages": "Page {{from}} of {{to}}",
+      "total": "Available rooms: {{total}}"
     }
   }
 }

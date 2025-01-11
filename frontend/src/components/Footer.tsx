@@ -11,7 +11,7 @@ const Footer = () => {
       <span className="select-none font-mono">Learnguage</span>
 
       <a
-        href="https://github.com/JavierRZR/chopchop-url"
+        href="https://github.com/JavierRZR/Learnguage2"
         target="_blank"
         className="flex items-center"
       >

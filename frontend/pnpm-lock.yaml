@@ -32,6 +32,9 @@ dependencies:
   tippy.js:
     specifier: ^6.3.7
     version: 6.3.7
+  uuid:
+    specifier: ^11.0.5
+    version: 11.0.5
   zustand:
     specifier: ^5.0.2
     version: 5.0.2(@types/react@18.3.18)(react@18.3.1)
@@ -2365,6 +2368,11 @@ packages:
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
+
+  /uuid@11.0.5:
+    resolution: {integrity: sha512-508e6IcKLrhxKdBbcA2b4KQZlLVp2+J5UwQ6F7Drckkc5N9ZJwFa4TgWtsww9UG8fGHbm6gbV19TdM5pQ4GaIA==}
+    hasBin: true
+    dev: false
 
   /vite@6.0.6:
     resolution: {integrity: sha512-NSjmUuckPmDU18bHz7QZ+bTYhRR0iA72cs2QAxCqDpafJ0S6qetco0LB3WW2OxlMHS0JmAv+yZ/R3uPmMyGTjQ==}

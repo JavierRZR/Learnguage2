@@ -3,7 +3,7 @@ const darkColor = "#000";
 const ligthColor = "#eee";
 
 const LightThemeIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -31,7 +31,7 @@ const LightThemeIcon = ({
 };
 
 const DarkThemeIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -60,7 +60,7 @@ const DarkThemeIcon = ({
 };
 
 const LanguageIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -91,7 +91,7 @@ const LanguageIcon = ({
 };
 
 const LinkedinIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -122,7 +122,7 @@ const LinkedinIcon = ({
 };
 
 const GithubIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -149,7 +149,7 @@ const GithubIcon = ({
 };
 
 const GlobeWorlIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -180,7 +180,7 @@ const GlobeWorlIcon = ({
 };
 
 const MailIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -208,7 +208,7 @@ const MailIcon = ({
 };
 
 const ExternalLinkIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -237,7 +237,7 @@ const ExternalLinkIcon = ({
 };
 
 const ArrowRightIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -264,7 +264,7 @@ const ArrowRightIcon = ({
 };
 
 const ProfileIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -293,7 +293,7 @@ const ProfileIcon = ({
 };
 
 const LinkIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -326,7 +326,7 @@ const LinkIcon = ({
 };
 
 const LockIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -355,7 +355,7 @@ const LockIcon = ({
 };
 
 const LockOffIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -385,7 +385,7 @@ const LockOffIcon = ({
 };
 
 const CopyIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -413,7 +413,7 @@ const CopyIcon = ({
 };
 
 const SettingsIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -441,7 +441,7 @@ const SettingsIcon = ({
 };
 
 const DeleteIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -471,7 +471,7 @@ const DeleteIcon = ({
   );
 };
 const CloseIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -498,7 +498,7 @@ const CloseIcon = ({
   );
 };
 const RandomIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -527,7 +527,7 @@ const RandomIcon = ({
   );
 };
 const LanguageBackgroundIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
@@ -554,13 +554,13 @@ const LanguageBackgroundIcon = ({
   );
 };
 const ArrowNextIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
 }) => {
-  const { theme } = useThemeContext();
-  color = theme == "dark" ? ligthColor : darkColor;
+  // const { theme } = useThemeContext();
+  // color = theme == "dark" ? ligthColor : darkColor;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -579,13 +579,13 @@ const ArrowNextIcon = ({
   );
 };
 const ArrowPreviousIcon = ({
-  color = "#ffffff",
+  color = "#eee",
   strokeWidth = "1.5",
   size = 32,
   className = "",
 }) => {
-  const { theme } = useThemeContext();
-  color = theme == "dark" ? ligthColor : darkColor;
+  // const { theme } = useThemeContext();
+  // color = theme == "dark" ? ligthColor : darkColor;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

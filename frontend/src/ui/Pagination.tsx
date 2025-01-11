@@ -43,7 +43,10 @@ const Pagination = <T,>({
       <Button onClick={previous} disabled={currentPage === 1}>
         <ArrowPreviousIcon size={24} />
       </Button>
-      <Badge>{t("pagination.message", { from, to, total })}</Badge>
+      <Badge>
+        {t("pagination.pages", { from, to })}
+        <br></br> {t("pagination.total", { total })}
+      </Badge>
       <Button onClick={next} disabled={currentPage === totalPages}>
         <ArrowNextIcon size={24} />
       </Button>

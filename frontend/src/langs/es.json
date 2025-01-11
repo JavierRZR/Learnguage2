@@ -14,7 +14,8 @@
     "pagination": {
       "previous": "Anterior",
       "next": "Siguiente",
-      "message": "Página {{from}} de {{to}} Total de salas: {{total}}."
+      "pages": "Página {{from}} de {{to}}",
+      "total": "Salas disponibles: {{total}}"
     }
   }
 }
