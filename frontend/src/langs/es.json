@@ -1,5 +1,20 @@
 {
   "translation": {
-    "title": "Título"
+    "home": {
+      "header": "Conecta, practica, y comparte: conversaciones sin fronteras",
+      "subheader": "Una plataforma para practicar idiomas, hacer amigos y disfrutar de conversaciones reales, ya sea por video, voz o texto.",
+      "loginForm": {
+        "usernameLabel": "Nombre de usuario",
+        "usernameSublabel": "Introduce tu nombre para que te reconozcan, únete a salas creadas por otras personas o crea la tuya propia."
+      },
+      "roomsList": {
+        "header": "Explora los grupos disponibles!"
+      }
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "message": "Página {{from}} de {{to}} Total de salas: {{total}}."
+    }
   }
 }

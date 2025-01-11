@@ -11,7 +11,7 @@ const Navbar = () => {
       className=" sticky top-0 z-50 flex w-screen max-w-6xl select-none flex-row items-center justify-between rounded-b-xl p-5 "
     >
       <Link to={"/"}>
-        <div className="font-mono text-xl font-bold">ChopchopURL</div>
+        <div className="font-mono text-xl font-bold">Learnguage</div>
       </Link>
       <div className="flex flex-row items-center justify-center gap-2">
         <ThemeSwitch />

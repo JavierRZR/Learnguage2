@@ -1,5 +1,20 @@
 {
   "translation": {
-    "title": "Title"
+    "home": {
+      "header": "Connect, practice, and share: conversations without borders",
+      "subheader": "A platform to practice languages, make friends, and enjoy real conversations, whether by video, voice, or text.",
+      "loginForm": {
+        "usernameLabel": "Username",
+        "usernameSublabel": "Enter your name to be recognized, join rooms created by others, or create your own."
+      },
+      "roomsList": {
+        "header": "Explore the available groups!"
+      }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "message": "Page {{from}} of {{to}} Total rooms: {{total}}."
+    }
   }
 }

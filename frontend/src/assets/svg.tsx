@@ -526,6 +526,83 @@ const RandomIcon = ({
     </svg>
   );
 };
+const LanguageBackgroundIcon = ({
+  color = "#ffffff",
+  strokeWidth = "1.5",
+  size = 32,
+  className = "",
+}) => {
+  const { theme } = useThemeContext();
+  color = theme == "dark" ? ligthColor : darkColor;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`icon icon-tabler icon-tabler-clipboard-copy ${className}`}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      stroke={color}
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M5 5h6.586a1 1 0 0 1 .707 1.707l-1.293 1.293"></path>{" "}
+      <path d="M8 8c0 1.5 .5 3 -2 5"></path> <path d="M12 20l4 -9l4 9"></path>{" "}
+      <path d="M19.1 18h-6.2"></path>
+    </svg>
+  );
+};
+const ArrowNextIcon = ({
+  color = "#ffffff",
+  strokeWidth = "1.5",
+  size = 32,
+  className = "",
+}) => {
+  const { theme } = useThemeContext();
+  color = theme == "dark" ? ligthColor : darkColor;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`icon icon-tabler icon-tabler-clipboard-copy ${className}`}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      stroke={color}
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M9 6l6 6l-6 6" />
+    </svg>
+  );
+};
+const ArrowPreviousIcon = ({
+  color = "#ffffff",
+  strokeWidth = "1.5",
+  size = 32,
+  className = "",
+}) => {
+  const { theme } = useThemeContext();
+  color = theme == "dark" ? ligthColor : darkColor;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`icon icon-tabler icon-tabler-clipboard-copy ${className}`}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      stroke={color}
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 6l-6 6l6 6" />
+    </svg>
+  );
+};
 
 export {
   LightThemeIcon,
@@ -546,4 +623,7 @@ export {
   DeleteIcon,
   CloseIcon,
   RandomIcon,
+  LanguageBackgroundIcon,
+  ArrowNextIcon,
+  ArrowPreviousIcon,
 };
