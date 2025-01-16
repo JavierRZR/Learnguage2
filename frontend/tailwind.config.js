@@ -3,7 +3,12 @@ export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        lightBg: "url('/assets/svgBgLight.svg')",
+        darkBg: "url('/assets/svgBgDark.svg')",
+      },
+    },
   },
   plugins: [],
 };

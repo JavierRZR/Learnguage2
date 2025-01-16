@@ -33,8 +33,8 @@ const HomeActions = () => {
 
   return (
     <>
-      <section className="flex flex-row items-center justify-center gap-10 p-16 text-center m-auto rounded-xl bg-neutral-200 dark:bg-neutral-950 bg-opacity-80 max-w-[800px]">
-        <div className="w-[60%] text-start">
+      <section className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center gap-10 p-16 text-center m-auto rounded-xl bg-neutral-200 dark:bg-neutral-950 bg-opacity-50 max-w-[800px]">
+        <div className=" text-start">
           <InputField>
             <label className="ps-1 text-sm font-semibold dark:opacity-80">
               {t("home.loginForm.usernameLabel")}
@@ -59,7 +59,7 @@ const HomeActions = () => {
             </span>
           </InputField>
         </div>
-        <div className="w-[40%] flex flex-col items-center justify-center gap-5">
+        <div className="flex flex-col items-center justify-center gap-5">
           <Button className="min-w-48" onClick={() => {}}>
             Crear sala
           </Button>

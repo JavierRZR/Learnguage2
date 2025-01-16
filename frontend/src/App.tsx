@@ -1,8 +1,11 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "sonner";
 
+import { ThemeProvider } from "./contexts/ThemeProvider";
 import Layout from "./routes/Layout";
 import Home from "./routes/Home";
+import Room from "./routes/Room";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "room/:roomId",
+        element: <Room />,
       },
       { path: "*", element: <h1>404 NOT FOUND</h1> },
     ],
@@ -25,7 +32,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <Toaster />
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { v4 as uuidv4 } from "uuid";
-import fetchRandomName from "../utils/fetchRandomName.ts";
+// import fetchRandomName from "../utils/fetchRandomName.ts";
 type UserContext = {
   userId: string;
   name: string;
@@ -8,7 +8,9 @@ type UserContext = {
 };
 
 const uuid = uuidv4();
-const name = await fetchRandomName();
+//todo descomentar esto
+// const name = await fetchRandomName();
+const name = "";
 
 const useUserContext = create<UserContext>()((set) => ({
   userId: uuid,

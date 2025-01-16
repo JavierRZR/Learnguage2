@@ -28,7 +28,7 @@ const RoomInfo = ({ data }: RoomInfoProps) => {
   return (
     <Link
       to={`/room/${room_id}`}
-      className={`m-auto w-[300px] h-auto min-h-[180px]  p-5 bg-neutral-200 dark:bg-neutral-900 rounded-md  dark:text-neutral-300/90 text-start
+      className={`m-auto w-[300px] h-auto min-h-[180px]  p-5 bg-neutral-200 bg-opacity-50 dark:bg-opacity-80 dark:bg-neutral-900 rounded-md  dark:text-neutral-300/90 text-start
         border-[1px]  border-neutral-300/10
         transition-all ease-in-out duration-300 hover:border-neutral-300/50 hover:border-2 hover:scale-105 dark:hover:brightness-125
         grid grid-cols-5 grid-rows-5 overflow-hidden`}
