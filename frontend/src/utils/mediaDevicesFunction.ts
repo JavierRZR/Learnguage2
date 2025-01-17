@@ -1,4 +1,4 @@
-function stopMicrophone(stream) {
+function stopMicrophone(stream: MediaStream) {
   if (stream) {
     stream.getTracks().forEach((track) => {
       if (track.kind == "audio") {
@@ -8,7 +8,7 @@ function stopMicrophone(stream) {
   }
 }
 
-function stopCamera(stream) {
+function stopCamera(stream: MediaStream) {
   if (stream) {
     stream.getTracks().forEach((track) => {
       if (track.kind == "video") {
@@ -18,29 +18,29 @@ function stopCamera(stream) {
   }
 }
 
-function restartCamera(addVideoStream, connectToNewUser) {
-  navigator.mediaDevices
-    .getUserMedia({
-      video: true,
-      audio: true,
-    })
-    .then((stream) => {
-      addVideoStream(myVideo, stream);
-      mediaStream = stream;
+// function restartCamera(addVideoStream, connectToNewUser) {
+//   navigator.mediaDevices
+//     .getUserMedia({
+//       video: true,
+//       audio: true,
+//     })
+//     .then((stream) => {
+//       addVideoStream(myVideo, stream);
+//       mediaStream = stream;
 
-      myPeer.on("call", (call) => {
-        call.answer(stream);
+//       myPeer.on("call", (call) => {
+//         call.answer(stream);
 
-        const userVideo = document.createElement("video");
-        call.on("stream", (userVideoStream) => {
-          addVideoStream(userVideo, userVideoStream);
-        });
-      });
+//         const userVideo = document.createElement("video");
+//         call.on("stream", (userVideoStream) => {
+//           addVideoStream(userVideo, userVideoStream);
+//         });
+//       });
 
-      socket.on("user-connected", (userId) => {
-        connectToNewUser(userId, stream);
-      });
-    });
-}
+//       socket.on("user-connected", (userId: string) => {
+//         connectToNewUser(userId, stream);
+//       });
+//     });
+// }
 
-export { stopMicrophone, stopCamera, restartCamera };
+export { stopMicrophone, stopCamera };

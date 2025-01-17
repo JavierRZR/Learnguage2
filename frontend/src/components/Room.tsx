@@ -1,10 +1,4 @@
-import {
-  EventHandler,
-  KeyboardEventHandler,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   IconMic,
@@ -79,7 +73,7 @@ export default function Room() {
   const [usuarios, setUsuarios] = useState<string[]>([]);
   const myVideo = document.createElement("video");
   myVideo.muted = true;
-  const mediaStream = useRef<MediaStream>(null);
+  const mediaStream = useRef<MediaStream>(new MediaStream());
 
   useEffect(() => {
     navigator.mediaDevices
