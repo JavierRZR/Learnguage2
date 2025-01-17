@@ -37,7 +37,7 @@ export default function Input2({
                  focus:outline-pink-700/50 focus:outline-2
                  transition-all ${className}`}
         onChange={(e) => handleChange(e.target.value)}
-        onKeyDown={(e) => (onKeyDown ? onKeyDown(e, e.target.value) : "")}
+        onKeyDown={(e) => onKeyDown && onKeyDown(e, e.currentTarget.value)}
       />
       {children}
     </div>
